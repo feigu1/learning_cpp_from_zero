@@ -15,7 +15,7 @@ int main(int argc, char const *argv[])
     std::cout << " dollars deposited.\nPoor Sam!" << std::endl;
     sam = ZERO;
     sue = ZERO;
-    std::cout << "sam has " << sam << " dollars and sue has " << sue;
+    std::cout << "sam has " << sam << "  dollars and sue has " << sue;
     std::cout << " dollars deposited." << std::endl << "Take $1 to each account." << std::endl << "Now ";
     sam -= 1;
     sue -= 1;
