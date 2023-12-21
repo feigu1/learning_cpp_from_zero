@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn
 # The main recursive "all" target.
 all: CMakeFiles/limits.dir/all
 all: CMakeFiles/exceed.dir/all
+all: CMakeFiles/floatnum.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/limits.dir/clean
 clean: CMakeFiles/exceed.dir/clean
+clean: CMakeFiles/floatnum.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,7 +85,7 @@ clean: CMakeFiles/exceed.dir/clean
 CMakeFiles/limits.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/limits.dir/build.make CMakeFiles/limits.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/limits.dir/build.make CMakeFiles/limits.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles --progress-num=3,4 "Built target limits"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles --progress-num=5,6 "Built target limits"
 .PHONY : CMakeFiles/limits.dir/all
 
 # Build rule for subdir invocation for target.
@@ -127,6 +129,32 @@ exceed: CMakeFiles/exceed.dir/rule
 CMakeFiles/exceed.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exceed.dir/build.make CMakeFiles/exceed.dir/clean
 .PHONY : CMakeFiles/exceed.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/floatnum.dir
+
+# All Build rule for target.
+CMakeFiles/floatnum.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles --progress-num=3,4 "Built target floatnum"
+.PHONY : CMakeFiles/floatnum.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/floatnum.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/floatnum.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles 0
+.PHONY : CMakeFiles/floatnum.dir/rule
+
+# Convenience name for target.
+floatnum: CMakeFiles/floatnum.dir/rule
+.PHONY : floatnum
+
+# clean rule for target.
+CMakeFiles/floatnum.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/clean
+.PHONY : CMakeFiles/floatnum.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

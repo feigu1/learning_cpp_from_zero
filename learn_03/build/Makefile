@@ -187,6 +187,19 @@ exceed/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exceed.dir/build.make CMakeFiles/exceed.dir/build
 .PHONY : exceed/fast
 
+#=============================================================================
+# Target rules for targets named floatnum
+
+# Build rule for target.
+floatnum: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 floatnum
+.PHONY : floatnum
+
+# fast build rule for target.
+floatnum/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/build
+.PHONY : floatnum/fast
+
 src/exceed.o: src/exceed.cpp.o
 .PHONY : src/exceed.o
 
@@ -210,6 +223,30 @@ src/exceed.s: src/exceed.cpp.s
 src/exceed.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/exceed.dir/build.make CMakeFiles/exceed.dir/src/exceed.cpp.s
 .PHONY : src/exceed.cpp.s
+
+src/floatnum.o: src/floatnum.cpp.o
+.PHONY : src/floatnum.o
+
+# target to build an object file
+src/floatnum.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/src/floatnum.cpp.o
+.PHONY : src/floatnum.cpp.o
+
+src/floatnum.i: src/floatnum.cpp.i
+.PHONY : src/floatnum.i
+
+# target to preprocess a source file
+src/floatnum.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/src/floatnum.cpp.i
+.PHONY : src/floatnum.cpp.i
+
+src/floatnum.s: src/floatnum.cpp.s
+.PHONY : src/floatnum.s
+
+# target to generate assembly for a file
+src/floatnum.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/src/floatnum.cpp.s
+.PHONY : src/floatnum.cpp.s
 
 src/limits.o: src/limits.cpp.o
 .PHONY : src/limits.o
@@ -248,10 +285,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... exceed"
+	@echo "... floatnum"
 	@echo "... limits"
 	@echo "... src/exceed.o"
 	@echo "... src/exceed.i"
 	@echo "... src/exceed.s"
+	@echo "... src/floatnum.o"
+	@echo "... src/floatnum.i"
+	@echo "... src/floatnum.s"
 	@echo "... src/limits.o"
 	@echo "... src/limits.i"
 	@echo "... src/limits.s"

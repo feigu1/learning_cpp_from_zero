@@ -120,4 +120,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/limits.dir/DependInfo.cmake"
   "CMakeFiles/exceed.dir/DependInfo.cmake"
+  "CMakeFiles/floatnum.dir/DependInfo.cmake"
   )
