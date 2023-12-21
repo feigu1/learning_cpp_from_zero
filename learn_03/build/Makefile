@@ -200,6 +200,19 @@ floatnum/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/build
 .PHONY : floatnum/fast
 
+#=============================================================================
+# Target rules for targets named fltadd
+
+# Build rule for target.
+fltadd: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fltadd
+.PHONY : fltadd
+
+# fast build rule for target.
+fltadd/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/build
+.PHONY : fltadd/fast
+
 src/exceed.o: src/exceed.cpp.o
 .PHONY : src/exceed.o
 
@@ -248,6 +261,30 @@ src/floatnum.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/src/floatnum.cpp.s
 .PHONY : src/floatnum.cpp.s
 
+src/fltadd.o: src/fltadd.cpp.o
+.PHONY : src/fltadd.o
+
+# target to build an object file
+src/fltadd.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/src/fltadd.cpp.o
+.PHONY : src/fltadd.cpp.o
+
+src/fltadd.i: src/fltadd.cpp.i
+.PHONY : src/fltadd.i
+
+# target to preprocess a source file
+src/fltadd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/src/fltadd.cpp.i
+.PHONY : src/fltadd.cpp.i
+
+src/fltadd.s: src/fltadd.cpp.s
+.PHONY : src/fltadd.s
+
+# target to generate assembly for a file
+src/fltadd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/src/fltadd.cpp.s
+.PHONY : src/fltadd.cpp.s
+
 src/limits.o: src/limits.cpp.o
 .PHONY : src/limits.o
 
@@ -286,6 +323,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... exceed"
 	@echo "... floatnum"
+	@echo "... fltadd"
 	@echo "... limits"
 	@echo "... src/exceed.o"
 	@echo "... src/exceed.i"
@@ -293,6 +331,9 @@ help:
 	@echo "... src/floatnum.o"
 	@echo "... src/floatnum.i"
 	@echo "... src/floatnum.s"
+	@echo "... src/fltadd.o"
+	@echo "... src/fltadd.i"
+	@echo "... src/fltadd.s"
 	@echo "... src/limits.o"
 	@echo "... src/limits.i"
 	@echo "... src/limits.s"

@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn
 all: CMakeFiles/limits.dir/all
 all: CMakeFiles/exceed.dir/all
 all: CMakeFiles/floatnum.dir/all
+all: CMakeFiles/fltadd.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/limits.dir/clean
 clean: CMakeFiles/exceed.dir/clean
 clean: CMakeFiles/floatnum.dir/clean
+clean: CMakeFiles/fltadd.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,7 +87,7 @@ clean: CMakeFiles/floatnum.dir/clean
 CMakeFiles/limits.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/limits.dir/build.make CMakeFiles/limits.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/limits.dir/build.make CMakeFiles/limits.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles --progress-num=5,6 "Built target limits"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles --progress-num=7,8 "Built target limits"
 .PHONY : CMakeFiles/limits.dir/all
 
 # Build rule for subdir invocation for target.
@@ -155,6 +157,32 @@ floatnum: CMakeFiles/floatnum.dir/rule
 CMakeFiles/floatnum.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/floatnum.dir/build.make CMakeFiles/floatnum.dir/clean
 .PHONY : CMakeFiles/floatnum.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/fltadd.dir
+
+# All Build rule for target.
+CMakeFiles/fltadd.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles --progress-num=5,6 "Built target fltadd"
+.PHONY : CMakeFiles/fltadd.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/fltadd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fltadd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/build/CMakeFiles 0
+.PHONY : CMakeFiles/fltadd.dir/rule
+
+# Convenience name for target.
+fltadd: CMakeFiles/fltadd.dir/rule
+.PHONY : fltadd
+
+# clean rule for target.
+CMakeFiles/fltadd.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fltadd.dir/build.make CMakeFiles/fltadd.dir/clean
+.PHONY : CMakeFiles/fltadd.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

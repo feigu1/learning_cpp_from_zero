@@ -8,6 +8,7 @@ endif()
 add_executable(limits src/limits.cpp)
 add_executable(exceed src/exceed.cpp)
 add_executable(floatnum src/floatnum.cpp)
+add_executable(fltadd src/fltadd.cpp)
 
 set(CMAKE_INSTALL_PREFIX /home/xys/learning_cpp_from_zero/learning_cpp_from_zero/learn_03/install)
 
@@ -23,6 +24,9 @@ target_include_directories(floatnum PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 
+target_include_directories(fltadd PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
 
 target_compile_features(limits PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
@@ -30,4 +34,5 @@ install(TARGETS
     limits 
     exceed
     floatnum
+    fltadd
     DESTINATION lib/${PROJECT_NAME})
